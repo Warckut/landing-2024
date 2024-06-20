@@ -1,5 +1,11 @@
+import Reviews from '../../components/Reviews';
+
 function Home() {
-  return <></>;
+  return (
+    <main>
+      <Reviews />
+    </main>
+  );
 }
 
 export default Home;
