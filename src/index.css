@@ -9,7 +9,6 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: scroll;
 }
 
 .heading-1 {
@@ -101,6 +100,13 @@ body {
   font-size: 10px;
   line-height: 1.4;
   letter-spacing: 0;
+}
+
+.caption {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
 }
 
 .button-l {
