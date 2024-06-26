@@ -1,0 +1,29 @@
+.top {
+  border-bottom: 1px solid var(--color-cool-gray-30);
+  padding: var(--spacing) 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.top>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__region {
+  min-width: 161px;
+  margin-left: var(--spacing);
+  margin-right: var(--spacing-3);
+  display: flex;
+  align-items: center;
+}
+
+.top__region img {
+  margin-right: var(--spacing);
+}
+
+@media screen and (max-width: 1024px) {
+  .top {
+    display: none;
+  }
+}

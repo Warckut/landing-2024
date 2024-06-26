@@ -1,0 +1,86 @@
+.mobile {
+  display: none;
+}
+
+.mobile>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.mobile__logo {
+  margin-right: var(--spacing-3);
+  display: flex;
+  align-items: center;
+}
+
+.mobile__btngroup {
+  display: flex;
+  align-items: center;
+  height: var(--spacing-6);
+}
+
+.mobile__btngroup button {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing);
+}
+
+.mobile__cart {
+  position: relative;
+}
+
+.mobile__cart>span {
+  position: absolute;
+  display: block;
+  padding-top: 2px;
+  width: 18px;
+  height: 18px;
+  top: -5px;
+  right: -1px;
+  font-size: 12px;
+  background-color: var(--color-error);
+  border-radius: 50%;
+  color: var(--color-white)
+}
+
+.mobile__menu {
+  color: var(--color-primary-90);
+}
+
+.profile {
+  position: relative;
+}
+
+.profile__popup {
+  position: absolute;
+  padding: var(--spacing-2);
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  border: 1px solid var(--color-cool-gray-20);
+  background-color: var(--color-white);
+  visibility: hidden;
+}
+
+.profile__popup a {
+  padding: var(--spacing);
+}
+
+.profile__popup a+a {
+  margin-top: var(--spacing);
+}
+
+.profile__popup_active {
+  visibility: visible;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile {
+    display: block;
+    padding: var(--spacing-2) 0;
+  }
+}

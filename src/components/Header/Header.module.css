@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+.header_scroll {
+  width: 100vw;
+  background-color: white;
+  border-bottom: 1px solid var(--color-cool-gray-10);
+  position: fixed;
+  top: -100%;
+  z-index: 5;
+  left: 0;
+  -webkit-transition: top 0.2s ease-out;
+  -moz-transition: top 0.2s ease-out;
+  -o-transition: top 0.2s ease-out;
+  transition: top 0.2s ease-out;
+}
+
+.header_show {
+  top: 0;
+}

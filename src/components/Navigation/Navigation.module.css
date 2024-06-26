@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: content;
+  align-content: start;
+  align-items: center;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.nav li.nav__menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: var(--spacing-4);
+  border: 1px solid var(--color-cool-gray-30);
+  background-color: var(--color-white);
+  padding: 0 var(--spacing-2);
+}
+
+.nav__item+.nav__item {
+  margin-left: var(--spacing);
+}
+
+.nav__item {
+  text-align: center;
+  align-items: center;
+  padding: var(--spacing) var(--spacing-2);
+  white-space: nowrap;
+}
+
+.nav__menu img {
+  margin-right: var(--spacing);
+}

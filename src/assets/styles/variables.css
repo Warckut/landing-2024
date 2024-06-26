@@ -1,10 +1,11 @@
 :root {
-  --color-primary-90: #003d87;
-  --color-primary-60: #458ff6;
-  --color-primary-30: #a6c8ff;
-  --color-error: #da1e28;
-  --color-warning: #f1c21b;
-  --color-success: #25a249;
+  --color-primary-90: #003D87;
+  --color-primary-60: #458FF6;
+  --color-primary-30: #A6C8FF;
+  --color-white: #ffffff;
+  --color-error: #DA1E28;
+  --color-warning: #F1C21B;
+  --color-success: #25A249;
   --color-overlay: rgba(18, 22, 25, 0.5);
   --color-bg: #ffffff;
   --color-bg-2: #f2f4f8;
@@ -19,11 +20,28 @@
   --color-text-2: #121619;
 
   --spacing: 8px;
-  --spacing-1: calc(var(--spacing) * 2);
-  --spacing-2: calc(var(--spacing) * 3);
-  --spacing-3: calc(var(--spacing) * 4);
-  --spacing-4: calc(var(--spacing) * 6);
-  --spacing-5: calc(var(--spacing) * 8);
-  --spacing-6: calc(var(--spacing) * 10);
-  --spacing-7: calc(var(--spacing) * 12);
+  --spacing-2: calc(var(--spacing) * 2);
+  --spacing-3: calc(var(--spacing) * 3);
+  --spacing-4: calc(var(--spacing) * 4);
+  --spacing-6: calc(var(--spacing) * 6);
+  --spacing-8: calc(var(--spacing) * 8);
+  --spacing-10: calc(var(--spacing) * 10);
+  --spacing-12: calc(var(--spacing) * 12);
+
+  --h1-font-size: 54px;
+  --h2-font-size: 42px;
+  --h3-font-size: 32px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+
+  --body-l-font-size: 18px;
+  --body-m-font-size: 16px;
+  --body-s-font-size: 14px;
+  --body-xs-font-size: 12px;
+  --body-xxs-font-size: 10px;
+
+  --btn-l-font-size: 20px;
+  --btn-m-font-size: 16px;
+  --btn-s-font-size: 14px;
 }
