@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formWrapper {
+  width: 50%;
+}
+
+.img {
+  width: 50%;
+  height: 100vh;
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .formWrapper {
+    width: 100%;
+  }
+
+  .img {
+    width: 100vw;
+    min-height: 280px;
+    height: 50vw;
+    margin-bottom: var(--spacing-32);
+  }
+}

@@ -1,0 +1,36 @@
+.formInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-16);
+}
+
+.label {
+  margin-bottom: var(--spacing-8);
+  color: var(--color-cool-gray-90);
+}
+
+.input {
+  padding: 13px 16px;
+  border: none;
+  border-bottom: 2px solid var(--color-cool-gray-30);
+  color: var(--color-cool-gray-60);
+  outline: none;
+  background: var(--color-cool-gray-10);
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  background-image: url(../../assets/svg/eye_icon.svg);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}

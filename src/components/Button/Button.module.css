@@ -1,0 +1,23 @@
+.buttonFilled {
+  background: #458ff6;
+  border: none;
+  color: var(--color-white);
+}
+
+.buttonFilled:hover {
+  background: var(--color-primary-60);
+}
+
+.buttonEmpty {
+  background: transparent;
+  border: 2px solid #458ff6;
+  color: #458ff6;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.buttonEmpty:hover {
+  background: #458ff6;
+  color: var(--color-white);
+}
