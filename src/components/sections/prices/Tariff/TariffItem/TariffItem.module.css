@@ -1,0 +1,85 @@
+.item {
+  position: relative;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: auto / span 5;
+  max-width: 410px;
+  padding: var(--spacing-48) var(--spacing-24);
+  border: 1px solid var(--color-cool-gray-20);
+  border-radius: 8px;
+}
+
+.popular {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-cool-gray-10);
+  padding: 2px 12px;
+  border-radius: 12px;
+}
+
+.item h1 {
+  margin-bottom: var(--spacing-8);
+  color: var(--color-cool-gray-90);
+  text-align: center;
+}
+
+.description {
+  margin-bottom: var(--spacing-32);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--color-cool-gray-90);
+  text-align: center;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-8);
+  color: var(--color-cool-gray-90);
+  margin-bottom: var(--spacing-32);
+}
+
+.oldPrice {
+  color: var(--color-cool-gray-40);
+  text-decoration: line-through;
+}
+
+.link {
+  margin: 0 auto;
+  margin-bottom: var(--spacing-32);
+}
+
+.optionsWrapper {
+  margin: 0 auto;
+}
+
+.options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+@media (max-width: 767px) {
+  .item {
+    margin: 0 auto;
+    min-width: 361px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: var(--spacing-32);
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}

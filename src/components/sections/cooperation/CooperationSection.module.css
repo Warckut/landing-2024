@@ -1,0 +1,91 @@
+.section {
+  padding-top: 244px;
+  padding-bottom: 80px;
+  background-image: url(../../../assets/img/medicine.png);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+.form {
+  max-width: 712px;
+  margin: 0 auto;
+  padding: 48px;
+  border-radius: 8px;
+  background: var(--color-white);
+  border: 1px solid var(--color-cool-gray-20);
+}
+
+.heading {
+  color: var(--color-cool-gray-90);
+  margin-bottom: var(--spacing-48);
+
+  h1 {
+    margin-bottom: var(--spacing-8);
+  }
+}
+
+.fio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-16);
+
+  > div {
+    width: 100%;
+    min-width: 100px;
+  }
+}
+
+.formComplete {
+  padding: 180px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #458ff6;
+  cursor: pointer;
+
+  &:hover .arrowIcon {
+    transform: translateX(5px);
+  }
+}
+
+.arrowIcon {
+  margin-left: var(--spacing-8);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 151px;
+    background-size: 100% 32%;
+    padding-bottom: 48px;
+  }
+
+  .form {
+    padding: 24px 16px 16px;
+  }
+
+  .heading {
+    margin-bottom: var(--spacing-32);
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+
+  .formComplete {
+    padding: 160px 48px;
+  }
+}

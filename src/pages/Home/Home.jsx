@@ -1,5 +1,13 @@
+import CooperationSection from '../../components/sections/cooperation/CooperationSection';
+import PricesSection from '../../components/sections/prices/PricesSection';
+
 function Home() {
-  return <></>;
+  return (
+    <>
+      <PricesSection />
+      <CooperationSection />
+    </>
+  );
 }
 
 export default Home;
