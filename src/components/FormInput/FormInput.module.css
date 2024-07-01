@@ -11,6 +11,7 @@
 }
 
 .input {
+  position: relative;
   padding: 13px 16px;
   border: none;
   border-bottom: 2px solid var(--color-cool-gray-30);
@@ -33,4 +34,40 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.customSelect {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrowSelect {
+  display: flex;
+}
+
+.options {
+  width: 100%;
+  position: absolute;
+  top: calc(100% + 4px);
+  padding: 4px 0;
+  background: var(--color-white);
+  list-style: none;
+
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.15px;
+}
+
+.options li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.options ul {
+  list-style: none;
+  padding-left: 20px;
 }

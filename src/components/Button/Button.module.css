@@ -1,5 +1,5 @@
 .buttonFilled {
-  background: #458ff6;
+  background: var(--color-primary-60);
   border: none;
   color: var(--color-white);
 }
@@ -10,14 +10,14 @@
 
 .buttonEmpty {
   background: transparent;
-  border: 2px solid #458ff6;
-  color: #458ff6;
+  border: 2px solid var(--color-primary-60);
+  color: var(--color-primary-60);
   display: flex;
   align-items: center;
   column-gap: 16px;
 }
 
 .buttonEmpty:hover {
-  background: #458ff6;
+  background: var(--color-primary-60);
   color: var(--color-white);
 }
