@@ -376,13 +376,3 @@ a {
   color: black;
   text-decoration: none; 
 }
-
-input[type="submit"],
-select,
-button {
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}

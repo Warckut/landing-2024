@@ -1,5 +1,5 @@
 .middle {
-  padding: var(--spacing) 0;
+  padding: var(--spacing-8) 0;
 }
 
 .middle>div {
@@ -7,7 +7,7 @@
 }
 
 .middle__logo {
-  margin-right: var(--spacing-3);
+  margin-right: var(--spacing-24);
   display: flex;
   align-items: center;
 }

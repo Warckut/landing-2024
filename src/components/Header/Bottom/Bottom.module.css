@@ -1,5 +1,5 @@
 .bottom {
-  padding: var(--spacing) 0;
+  padding: var(--spacing-8) 0;
   background-color: var(--color-cool-gray-10);
 }
 

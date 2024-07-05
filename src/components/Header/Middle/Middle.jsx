@@ -7,7 +7,7 @@ function Middle(props) {
   const { scroll, ...rest } = props;
 
   return (
-    <div className={styles.middle} style={{ padding: !scroll ? 'var(--spacing-2) 0' : 'var(--spacing) 0' }}>
+    <div className={styles.middle} style={{ padding: !scroll ? 'var(--spacing-16) 0' : 'var(--spacing-8) 0' }}>
       <div className='container'>
         <a href='/' className={styles.middle__logo}>
           <img src={logoImage} alt='logo' />

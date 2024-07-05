@@ -10,7 +10,7 @@
 
 
 .mobile__logo {
-  margin-right: var(--spacing-3);
+  margin-right: var(--spacing-24);
   display: flex;
   align-items: center;
 }
@@ -18,13 +18,13 @@
 .mobile__btngroup {
   display: flex;
   align-items: center;
-  height: var(--spacing-6);
+  height: var(--spacing-48);
 }
 
 .mobile__btngroup button {
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing);
+  padding: 0 var(--spacing-8);
 }
 
 .mobile__cart {
@@ -55,7 +55,7 @@
 
 .profile__popup {
   position: absolute;
-  padding: var(--spacing-2);
+  padding: var(--spacing-16);
   display: flex;
   flex-direction: column;
   top: 100%;
@@ -67,11 +67,11 @@
 }
 
 .profile__popup a {
-  padding: var(--spacing);
+  padding: var(--spacing-8);
 }
 
 .profile__popup a+a {
-  margin-top: var(--spacing);
+  margin-top: var(--spacing-8);
 }
 
 .profile__popup_active {
@@ -81,6 +81,6 @@
 @media screen and (max-width: 1024px) {
   .mobile {
     display: block;
-    padding: var(--spacing-2) 0;
+    padding: var(--spacing-16) 0;
   }
 }

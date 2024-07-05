@@ -10,7 +10,7 @@ function ProfileMenu() {
 
   return (
     <div className={styles.wrapper}>
-      <button ref={ref} className={styles.profile} onClick={() => setShow((v) => !v)}>
+      <button ref={ref} className={classNames('btn-reset', styles.profile)} onClick={() => setShow((v) => !v)}>
         <img src={profileImage} alt='profile' />
         <span>Профиль</span>
         <img
@@ -34,7 +34,7 @@ function ProfileMenu() {
           </a>
         </div>
       </button>
-      <button className={styles.cart}>
+      <button className={classNames('btn-reset', styles.cart)}>
         <img src={shoppingCartImage} alt='basket' />
         <span>Корзина</span>
         <img src={rowImage} alt='row' />

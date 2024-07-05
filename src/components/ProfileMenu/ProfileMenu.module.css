@@ -1,14 +1,15 @@
 .wrapper {
   display: flex;
-  margin-left: var(--spacing-10);
-  min-height: var(--spacing-4);
+  margin-left: var(--spacing-80);
+  min-height: var(--spacing-32);
 }
 
 .profile {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing);
+  padding: 0 var(--spacing-8);
+  cursor: pointer;
 }
 
 .down {
@@ -21,7 +22,7 @@
 
 .profile__popup {
   position: absolute;
-  padding: var(--spacing-2);
+  padding: var(--spacing-16);
   display: flex;
   flex-direction: column;
   top: 100%;
@@ -33,11 +34,11 @@
 }
 
 .profile__popup a {
-  padding: var(--spacing);
+  padding: var(--spacing-8);
 }
 
 .profile__popup a+a {
-  margin-top: var(--spacing);
+  margin-top: var(--spacing-8);
 }
 
 .profile__popup_active {
@@ -47,14 +48,14 @@
 .cart {
   display: flex;
   align-items: center;
-  padding: 0 var(--spacing);
+  padding: 0 var(--spacing-8);
 }
 
 .profile+.cart {
-  margin-left: var(--spacing-3);
+  margin-left: var(--spacing-24);
 }
 
 .profile span,
 .cart span {
-  margin: 0 var(--spacing);
+  margin: 0 var(--spacing-8);
 }

@@ -10,7 +10,7 @@ function Select(props) {
   return (
     <div ref={ref} className={styles.select}>
       <button
-        className={styles.select__title}
+        className={classNames('btn-reset', styles.select__title)}
         onClick={(e) => {
           e.preventDefault();
           setShow((v) => !v);

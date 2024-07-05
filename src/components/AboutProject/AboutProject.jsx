@@ -1,46 +1,53 @@
+import classNames from 'classnames';
 import styles from './AboutProject.module.css';
-import image1 from '../../assets/svg/Frame1.svg';
-import image2 from '../../assets/svg/Frame2.svg';
-import image3 from '../../assets/svg/Frame3.svg';
+import pillsImage from '../../assets/svg/pills.svg';
+import padImage from '../../assets/svg/pad.svg';
+import caseImage from '../../assets/svg/case.svg';
 import arrow from '../../assets/svg/arrow-right.svg';
 
 function AboutProject() {
   return (
-    <div id="about" className={styles.about}>
-      <div className={'container'}>
-        <div className={styles.about__main}>
-          <h2>О проекте</h2>
-          <p>
+    <div id='about' className={styles.about}>
+      <div className='container'>
+        <div className={styles.aboutMain}>
+          <h2 className={styles.mainHeading}>О проекте</h2>
+          <p className={styles.mainParagraph}>
             Наш проект создан группой врачей для популяризации современных медицинских знаний их доступности для всех,
             кто в этом заинтересован.
           </p>
         </div>
-        <div className={styles.about__advgs}>
-          <div className={styles.about__advg}>
-            <img src={image1} alt='Консультация' />
-            <h5>Консультация</h5>
-            <p>На нашем форуме вы найдете ответы на вопросы</p>
-            <a className={'btn'} href='/'>
+        <div className={styles.aboutList}>
+          <div className={styles.listItem}>
+            <div>
+              <img className={styles.itemImg} src={pillsImage} alt='Консультация' />
+              <h5 className={styles.itemHeading}>Консультация</h5>
+              <p className={styles.itemParagraph}>На нашем форуме вы найдете ответы на вопросы</p>
+            </div>
+            <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img src={arrow} alt='перейти' />
+              <img className={styles.hrefImg} src={arrow} alt='перейти' />
             </a>
           </div>
-          <div className={styles.about__advg}>
-            <img src={image2} alt='Тесты' />
-            <h5>Тесты</h5>
-            <p>Вы можете пройти тесты на нашем сайте</p>
-            <a className={'btn'} href='/'>
+          <div className={styles.listItem}>
+            <div>
+              <img className={styles.itemImg} src={padImage} alt='Тесты' />
+              <h5 className={styles.itemHeading}>Тесты</h5>
+              <p className={styles.itemParagraph}>Вы можете пройти тесты на нашем сайте</p>
+            </div>
+            <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img src={arrow} alt='перейти' />
+              <img className={styles.hrefImg} src={arrow} alt='перейти' />
             </a>
           </div>
-          <div className={styles.about__advg}>
-            <img src={image3} alt='Поиск клиники' />
-            <h5>Поиск клиники</h5>
-            <p>Мы поможем найти Вам ближайшую поликлинику</p>
-            <a className={'btn'} href='/'>
+          <div className={styles.listItem}>
+            <div>
+              <img className={styles.itemImg} src={caseImage} alt='Поиск клиники' />
+              <h5 className={styles.itemHeading}>Поиск клиники</h5>
+              <p className={styles.itemParagraph}>Мы поможем найти Вам ближайшую поликлинику</p>
+            </div>
+            <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img src={arrow} alt='перейти' />
+              <img className={styles.hrefImg} src={arrow} alt='перейти' />
             </a>
           </div>
         </div>

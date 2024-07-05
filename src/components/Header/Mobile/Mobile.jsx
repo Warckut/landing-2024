@@ -21,7 +21,7 @@ function Mobile() {
           <button
             ref={refProfile}
             onClick={() => setShowProfile((v) => !v)}
-            className={classNames(styles.mobile__profile, styles.profile)}
+            className={classNames('btn-reset', styles.mobile__profile, styles.profile)}
           >
             <img src={profileImage} alt='profile' />
             <div
@@ -37,7 +37,7 @@ function Mobile() {
               </a>
             </div>
           </button>
-          <button className={styles.mobile__cart}>
+          <button className={classNames('btn-reset', styles.mobile__cart)}>
             <img src={shoppingCartImage} alt='shopping cart' />
             <span>9</span>
           </button>
@@ -46,7 +46,7 @@ function Mobile() {
               e.stopPropagation();
               setShowSB((state) => !state);
             }}
-            className={styles.mobile__menu}
+            className={classNames('btn-reset', styles.mobile__menu)}
           >
             <img src={menuImage} alt='menu' />
             <span>Меню</span>
