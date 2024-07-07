@@ -1,39 +1,30 @@
+import { useState, useEffect } from 'react';
 import AboutProject from '../../components/AboutProject/AboutProject';
 import Articles from '../../components/Articles/Articles';
 import Main from '../../components/Main/Main';
-import { useState, useEffect } from 'react';
 import Header from '../../components/Header/Header';
+import { CATEGORIES } from './constants';
+
+const scrollPos = () => window.pageYOffset || document.documentElement.scrollTop;
 
 function Home() {
   const [show, setShow] = useState(false);
   const [category, setCategory] = useState('Все категории');
-  const categories = [
-    'Все категории',
-    'Тонометры',
-    'Дерматология',
-    'Инфекционные болезни',
-    'Кардиология',
-    'Неврология',
-    'Общая медицина',
-    'Терапия',
-    'Хирургия',
-  ];
-
-  const scrollPos = () => window.pageYOffset || document.documentElement.scrollTop;
+  const [lastScroll, setLastScroll] = useState(scrollPos());
+  const categories = CATEGORIES;
 
   useEffect(() => {
-    let lastScroll = scrollPos();
-    window.onscroll = function () {
-      if (scrollPos() < 150) {
-        setShow(false);
-      } else if (scrollPos() > lastScroll && show) {
-        setShow(false);
-      } else if (scrollPos() < lastScroll && !show) {
-        setShow(true);
-      }
-      lastScroll = scrollPos();
+    const handleScroll = () => {
+      const currentScrollPos = scrollPos();
+      if (currentScrollPos < 150) setShow(false);
+      else if (currentScrollPos > lastScroll && show) setShow(false);
+      else if (currentScrollPos < lastScroll && !show) setShow(true);
+      
+      setLastScroll(currentScrollPos);
     };
-  });
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [show, lastScroll]);
 
   return (
     <>

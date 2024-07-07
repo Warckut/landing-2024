@@ -3,8 +3,7 @@ import styles from './Sidebar.module.css';
 import { ReactComponent as LogoImage } from '../../assets/svg/logo.svg';
 import { ReactComponent as SearchImage } from '../../assets/svg/search.svg';
 
-function Sidebar(props) {
-  const { showSB, onClose, refp } = props;
+function Sidebar({ showSB, onClose, refp }) {
   return (
     <div
       className={classNames(styles.overlay, {
@@ -25,7 +24,7 @@ function Sidebar(props) {
             <SearchImage className={styles.searchImg} />
             <input type='text' className={styles.searchInput} placeholder='Поиск по ...' />
           </div>
-          <ul style={props.style} className={styles.nav} onClick={onClose}>
+          <ul className={styles.nav} onClick={onClose}>
             <li className={styles.navItem}>
               <a href='#main'>Главная</a>
             </li>

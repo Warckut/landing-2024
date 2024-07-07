@@ -3,8 +3,7 @@ import styles from './SearchForm.module.css';
 import { ReactComponent as SearchImage } from '../../assets/svg/search.svg';
 import Select from '../Select/Select';
 
-function SearchForm(props) {
-  const { category, categories, onSelected } = props;
+function SearchForm({ category, categories, onSelected }) {
 
   return (
     <form className={styles.search}>

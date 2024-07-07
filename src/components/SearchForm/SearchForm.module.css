@@ -24,6 +24,7 @@
 .searchBtn {
   margin-left: var(--spacing-24);
   font-size: var(--btn-m-font-size);
+  cursor: pointer;
 }
 
 .searchInput:focus-visible {

@@ -5,8 +5,7 @@ import Middle from './Middle/Middle';
 import Bottom from './Bottom/Bottom';
 import Mobile from './Mobile/Mobile';
 
-function Header(props) {
-  const { scroll, show, category, categories, onSelected } = props;
+function Header({ scroll, show, category, categories, onSelected }) {
 
   return (
     <header

@@ -4,8 +4,7 @@ import { ReactComponent as LogoImage } from '../../../assets/svg/logo.svg';
 import SearchForm from '../../SearchForm/SearchForm';
 import Navigation from '../../Navigation/Navigation';
 
-function Middle(props) {
-  const { scroll, ...rest } = props;
+function Middle({ scroll, ...rest }) {
 
   return (
     <div

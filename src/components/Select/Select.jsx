@@ -3,8 +3,7 @@ import styles from './Select.module.css';
 import { ReactComponent as RowImage } from '../../assets/svg/chevron-down-gray.svg';
 import usePopup from '../../hooks/usePopup';
 
-function Select(props) {
-  const { selected, values, onSelected } = props;
+function Select({ selected, values, onSelected }) {
   const [ref, show, setShow] = usePopup();
 
   return (
