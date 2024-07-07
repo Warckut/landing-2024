@@ -5,13 +5,13 @@
   font-size: var(--body-m-font-size);
 }
 
-.search__img {
+.searchImg {
   position: absolute;
   top: calc(50% - 10px);
   left: var(--spacing-16);
 }
 
-.search input[type="text"] {
+.searchInput {
   min-width: 150px;
   width: 100%;
   padding-left: var(--spacing-48);
@@ -21,15 +21,15 @@
   font-family: 'Roboto';
 }
 
-.search input[type="submit"] {
+.searchBtn {
   margin-left: var(--spacing-24);
   font-size: var(--btn-m-font-size);
 }
 
-.search input[type="text"]:focus-visible {
+.searchInput:focus-visible {
   outline: none;
 }
 
-.search input[type="text"]::placeholder {
+.searchInput::placeholder {
   opacity: 1;
 }

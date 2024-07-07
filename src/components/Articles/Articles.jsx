@@ -1,67 +1,76 @@
+import classNames from 'classnames';
 import styles from './Articles.module.css';
-import article1Image from '../../assets/img/article1.png';
-import article2Image from '../../assets/img/article2.png';
-import article3Image from '../../assets/img/article3.png';
+import headacheImage from '../../assets/img/headache.png';
+import migraineImage from '../../assets/img/migraine.png';
+import antidepressantsImage from '../../assets/img/antidepressants.png';
 import arrow from '../../assets/svg/arrow-right.svg';
 import Loader from '../Loader/Loader';
 
 function Articles() {
   return (
-    <div id="articles" className={styles.articles}>
+    <div id='articles' className={styles.articles}>
       <div className='container'>
-        <caption>СТАТЬИ</caption>
-        <h2>
+        <caption className={styles.articlesCaption}>СТАТЬИ</caption>
+        <h2 className={styles.articlesHeading}>
           Статьи для врачей, пациентов и их родственников, а также научно-популярные доклады о прорывах в медицине
         </h2>
-        <div className={styles.articles__list}>
-          <div className={styles.articles__item}>
-            <img className={styles.articles__image} src={article1Image} alt='' />
-            <div className={styles.articles__content}>
-              <h5>Головная боль</h5>
-              <p>Врач-невролог из Москвы, Иванов Иван Иванович, отвечает на частые вопросы касающиеся проблемы ...</p>
+        <div className={styles.articlesList}>
+          <div className={styles.listItem}>
+            <img className={styles.itemImg} src={headacheImage} alt='' />
+            <div className={styles.itemContent}>
+              <h5 className={styles.contentHeading}>Головная боль</h5>
+              <p className={styles.contentParagraph}>
+                Врач-невролог из Москвы, Иванов Иван Иванович, отвечает на частые вопросы касающиеся проблемы
+              </p>
             </div>
-            <a href='/' className={`btn ${styles.articles__detail}`}>
+            <a href='/' className={classNames('btn', styles.itemDetail)}>
               <span>Подробнее</span>
-              <img src={arrow} alt='подробнее' />
+              <img src={arrow} alt='подробнее' className={styles.detailImg} />
             </a>
           </div>
-          <div className={styles.articles__item}>
-            <div className={styles.articles__image}>
+          <div className={styles.listItem}>
+            <div className={styles.itemImg}>
               <Loader />
             </div>
-            <div className={styles.articles__content}>
-              <h5>Мигрень</h5>
-              <p>Информация для пациентов. Мигрень. Симптомы, диагностика, лечение, профилактика</p>
+            <div className={styles.itemContent}>
+              <h5 className={styles.contentHeading}>Мигрень</h5>
+              <p className={styles.contentParagraph}>
+                Информация для пациентов. Мигрень. Симптомы, диагностика, лечение, профилактика sdfsdfsdfsdfsdfsfsdf
+              </p>
             </div>
-            <a href='/' className={`btn ${styles.articles__detail}`}>
+            <a href='/' className={classNames('btn', styles.itemDetail)}>
               <span>Подробнее</span>
-              <img src={arrow} alt='подробнее' />
+              <img src={arrow} alt='подробнее' className={styles.detailImg} />
             </a>
           </div>
-          <div className={styles.articles__item}>
-            <img src={article2Image} alt='' className={styles.articles__image} />
-            <div className={styles.articles__content}>
-              <h5>Доказательная медицина</h5>
-              <p>Читая статьи, и получая консультации на нашем сайте, вы часто будете встречаться...</p>
+          <div className={styles.listItem}>
+            <img src={migraineImage} alt='' className={styles.itemImg} />
+            <div className={styles.itemContent}>
+              <h5 className={styles.contentHeading}>Доказательная медицина</h5>
+              <p className={styles.contentParagraph}>
+                Читая статьи, и получая консультации на нашем сайте, вы часто будете встречаться dsfsdfdsfsdfsdfsd
+              </p>
             </div>
-            <a href='/' className={`btn ${styles.articles__detail}`}>
+            <a href='/' className={classNames('btn', styles.itemDetail)}>
               <span>Подробнее</span>
-              <img src={arrow} alt='подробнее' />
+              <img src={arrow} alt='подробнее' className={styles.detailImg} />
             </a>
           </div>
-          <div className={styles.articles__item}>
-            <img src={article3Image} alt='' className={styles.articles__image} />
-            <div className={styles.articles__content}>
-              <h5>Антидепрессанты</h5>
-              <p>Как показало исследование, антидепрессанты, особенно относящиеся к классе селектив...</p>
+          <div className={styles.listItem}>
+            <img src={antidepressantsImage} alt='' className={styles.itemImg} />
+            <div className={styles.itemContent}>
+              <h5 className={styles.contentHeading}>Антидепрессанты</h5>
+              <p className={styles.contentParagraph}>
+                Как показало исследование, антидепрессанты, особенно относящиеся к классе селектив sdfsdfsdfsdfsdfsdfsd
+              </p>
             </div>
-            <a href='/' className={`btn ${styles.articles__detail}`}>
+            <a href='/' className={classNames('btn', styles.itemDetail)}>
               <span>Подробнее</span>
-              <img src={arrow} alt='подробнее' />
+              <img src={arrow} alt='подробнее' className={styles.detailImg} />
             </a>
           </div>
         </div>
-        <button className='btn btn-primary'>Все статьи</button>
+        <button className={classNames('btn btn-primary', styles.articlesBtn)}>Все статьи</button>
       </div>
     </div>
   );

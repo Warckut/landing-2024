@@ -1,6 +1,6 @@
 import styles from './Top.module.css';
 import SearchForm from '../../SearchForm/SearchForm';
-import locationImage from '../../../assets/svg/map-marker.svg';
+import { ReactComponent as LocationImage } from '../../../assets/svg/map-marker.svg';
 import ProfileMenu from '../../ProfileMenu/ProfileMenu';
 
 function Top(props) {
@@ -9,12 +9,14 @@ function Top(props) {
   return (
     <div className={styles.top}>
       <div className='container'>
-        <div className={styles.top__region}>
-          <img src={locationImage} alt='LocationImage' />
-          <span>Москва</span>
+        <div className={styles.topRegion}>
+          <LocationImage />
+          <span className={styles.regionName}>Москва</span>
         </div>
         {scroll && <SearchForm {...rest} />}
-        <ProfileMenu />
+        <div className={styles.topMenu}>
+          <ProfileMenu />
+        </div>
       </div>
     </div>
   );

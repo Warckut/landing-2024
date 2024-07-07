@@ -10,10 +10,8 @@ function Header(props) {
 
   return (
     <header
-      className={classNames({
-        [styles.header_scroll]: scroll,
-        [styles.header]: !scroll,
-        [styles.header_show]: show,
+      className={classNames(scroll ? styles.scrollHeader : styles.header, {
+        [styles.show]: show,
       })}
     >
       <Top scroll={scroll} categories={categories} category={category} onSelected={onSelected} />

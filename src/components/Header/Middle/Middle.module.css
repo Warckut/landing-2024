@@ -1,4 +1,8 @@
 .middle {
+  padding: var(--spacing-16) 0;
+}
+
+.scrollMiddle {
   padding: var(--spacing-8) 0;
 }
 
@@ -6,14 +10,10 @@
   display: flex;
 }
 
-.middle__logo {
+.middleLogo {
   margin-right: var(--spacing-24);
   display: flex;
   align-items: center;
-}
-
-.middle__logo > img {
-  min-width: 169px;
 }
 
 @media screen and (max-width: 1024px) {

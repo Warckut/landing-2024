@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './Main.module.css';
-import image from '../../assets/img/block-1-img-1.png';
+import mainImage from '../../assets/img/main.png';
 
 function Main() {
   return (
@@ -18,7 +18,7 @@ function Main() {
           </div>
         </div>
         <div className={styles.main__item}>
-          <img src={image} alt='изображение' />
+          <img src={mainImage} alt='изображение' />
         </div>
       </div>
     </div>

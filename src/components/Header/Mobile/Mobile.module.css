@@ -8,74 +8,35 @@
   align-items: center;
 }
 
-
-.mobile__logo {
+.mobileLogo {
   margin-right: var(--spacing-24);
   display: flex;
   align-items: center;
 }
 
-.mobile__btngroup {
+.logoImg {
+  height: 24px;
+}
+
+.mobileBtngroup {
   display: flex;
   align-items: center;
   height: var(--spacing-48);
 }
 
-.mobile__btngroup button {
+.mobileMenu {
   display: flex;
   align-items: center;
+  gap: var(--spacing-8);
   padding: 0 var(--spacing-8);
 }
 
-.mobile__cart {
-  position: relative;
+.menuImg * {
+  fill: var(--color-primary-90);
 }
 
-.mobile__cart>span {
-  position: absolute;
-  display: block;
-  padding-top: 2px;
-  width: 18px;
-  height: 18px;
-  top: -5px;
-  right: -1px;
-  font-size: 12px;
-  background-color: var(--color-error);
-  border-radius: 50%;
-  color: var(--color-white)
-}
-
-.mobile__menu {
+.mobileMenu {
   color: var(--color-primary-90);
-}
-
-.profile {
-  position: relative;
-}
-
-.profile__popup {
-  position: absolute;
-  padding: var(--spacing-16);
-  display: flex;
-  flex-direction: column;
-  top: 100%;
-  right: 0;
-  z-index: 1;
-  border: 1px solid var(--color-cool-gray-20);
-  background-color: var(--color-white);
-  visibility: hidden;
-}
-
-.profile__popup a {
-  padding: var(--spacing-8);
-}
-
-.profile__popup a+a {
-  margin-top: var(--spacing-8);
-}
-
-.profile__popup_active {
-  visibility: visible;
 }
 
 @media screen and (max-width: 1024px) {

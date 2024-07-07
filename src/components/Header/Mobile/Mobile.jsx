@@ -1,54 +1,30 @@
 import classNames from 'classnames';
 import usePopup from '../../../hooks/usePopup';
 import styles from './Mobile.module.css';
-import logoImage from '../../../assets/svg/logo-mobile.svg';
-import profileImage from '../../../assets/svg/user-blue.svg';
-import shoppingCartImage from '../../../assets/svg/shopping-cart-blue.svg';
-import menuImage from '../../../assets/svg/menu-blue.svg';
+import { ReactComponent as LogoImage } from '../../../assets/svg/logo.svg';
+import { ReactComponent as MenuImage } from '../../../assets/svg/menu.svg';
 import Sidebar from '../../Sidebar/Sidebar';
+import ProfileMenu from '../../ProfileMenu/ProfileMenu';
 
 function Mobile() {
   const [refSB, showSB, setShowSB] = usePopup();
-  const [refProfile, showProfile, setShowProfile] = usePopup();
 
   return (
     <div className={styles.mobile}>
       <div className={'container'}>
-        <a className={styles.mobile__logo} href='/'>
-          <img src={logoImage} alt='logo' />
+        <a className={styles.mobileLogo} href='/'>
+          <LogoImage className={styles.logoImg} />
         </a>
-        <div className={styles.mobile__btngroup}>
-          <button
-            ref={refProfile}
-            onClick={() => setShowProfile((v) => !v)}
-            className={classNames('btn-reset', styles.mobile__profile, styles.profile)}
-          >
-            <img src={profileImage} alt='profile' />
-            <div
-              className={classNames(styles.profile__popup, {
-                [styles.profile__popup_active]: showProfile,
-              })}
-            >
-              <a href='/SignIn' className={classNames('btn', 'btn-primary')}>
-                Войти
-              </a>
-              <a href='/SignUp' className={classNames('btn', 'btn-outline')}>
-                Зарегистрироваться
-              </a>
-            </div>
-          </button>
-          <button className={classNames('btn-reset', styles.mobile__cart)}>
-            <img src={shoppingCartImage} alt='shopping cart' />
-            <span>9</span>
-          </button>
+        <div className={styles.mobileBtngroup}>
+          <ProfileMenu />
           <button
             onClick={(e) => {
               e.stopPropagation();
               setShowSB((state) => !state);
             }}
-            className={classNames('btn-reset', styles.mobile__menu)}
+            className={classNames('btn-reset', styles.mobileMenu)}
           >
-            <img src={menuImage} alt='menu' />
+            <MenuImage className={styles.menuImg}/>
             <span>Меню</span>
           </button>
         </div>

@@ -8,7 +8,7 @@
   line-height: 140%;
 }
 
-.nav li.nav__menu {
+.navMenu {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -18,17 +18,13 @@
   padding: 0 var(--spacing-16);
 }
 
-.nav__item+.nav__item {
-  /* margin-left: var(--spacing-8); */
-}
-
-.nav__item {
+.navItem {
   text-align: center;
   align-items: center;
   padding: var(--spacing-8) var(--spacing-16);
   white-space: nowrap;
 }
 
-.nav__menu img {
+.menuImg {
   margin-right: var(--spacing-8);
 }

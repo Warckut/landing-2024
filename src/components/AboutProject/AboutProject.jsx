@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 import styles from './AboutProject.module.css';
-import pillsImage from '../../assets/svg/pills.svg';
-import padImage from '../../assets/svg/pad.svg';
-import caseImage from '../../assets/svg/case.svg';
-import arrow from '../../assets/svg/arrow-right.svg';
+import { ReactComponent as PillsImage } from '../../assets/svg/pills.svg';
+import { ReactComponent as PadImage } from '../../assets/svg/pad.svg';
+import { ReactComponent as CaseImage } from '../../assets/svg/case.svg';
+import { ReactComponent as Arrow } from '../../assets/svg/arrow-right.svg';
 
 function AboutProject() {
   return (
@@ -19,35 +19,35 @@ function AboutProject() {
         <div className={styles.aboutList}>
           <div className={styles.listItem}>
             <div>
-              <img className={styles.itemImg} src={pillsImage} alt='Консультация' />
+              <PillsImage className={styles.itemImg} />
               <h5 className={styles.itemHeading}>Консультация</h5>
               <p className={styles.itemParagraph}>На нашем форуме вы найдете ответы на вопросы</p>
             </div>
             <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img className={styles.hrefImg} src={arrow} alt='перейти' />
+              <Arrow className={styles.hrefImg}/>
             </a>
           </div>
           <div className={styles.listItem}>
             <div>
-              <img className={styles.itemImg} src={padImage} alt='Тесты' />
+              <PadImage className={styles.itemImg} />
               <h5 className={styles.itemHeading}>Тесты</h5>
               <p className={styles.itemParagraph}>Вы можете пройти тесты на нашем сайте</p>
             </div>
             <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img className={styles.hrefImg} src={arrow} alt='перейти' />
+              <Arrow className={styles.hrefImg}/>
             </a>
           </div>
           <div className={styles.listItem}>
             <div>
-              <img className={styles.itemImg} src={caseImage} alt='Поиск клиники' />
+              <CaseImage className={styles.itemImg} />
               <h5 className={styles.itemHeading}>Поиск клиники</h5>
               <p className={styles.itemParagraph}>Мы поможем найти Вам ближайшую поликлинику</p>
             </div>
             <a className={classNames('btn', styles.itemHref)} href='/'>
               <span>Узнать больше</span>
-              <img className={styles.hrefImg} src={arrow} alt='перейти' />
+              <Arrow className={styles.hrefImg}/>
             </a>
           </div>
         </div>

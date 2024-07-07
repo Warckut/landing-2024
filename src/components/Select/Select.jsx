@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from './Select.module.css';
-import rowImage from '../../assets/svg/chevron-down-gray.svg';
+import { ReactComponent as RowImage } from '../../assets/svg/chevron-down-gray.svg';
 import usePopup from '../../hooks/usePopup';
 
 function Select(props) {
@@ -10,31 +10,28 @@ function Select(props) {
   return (
     <div ref={ref} className={styles.select}>
       <button
-        className={classNames('btn-reset', styles.select__title)}
+        className={classNames('btn-reset', styles.selectTitle)}
         onClick={(e) => {
           e.preventDefault();
           setShow((v) => !v);
         }}
       >
         <span>{selected}</span>
-        <img
-          src={rowImage}
-          alt='row'
-          className={classNames({
-            [styles.down]: !show,
+        <RowImage
+          className={classNames(styles.titleImg, {
             [styles.up]: show,
           })}
         />
       </button>
       <ul
-        className={classNames(styles.select__content, {
+        className={classNames(styles.selectContent, {
           hidden: !show,
         })}
       >
         {values.map((v) => (
           <li
             key={v}
-            className={classNames(styles.select__item, {
+            className={classNames(styles.contentItem, {
               [styles.active]: v === selected,
             })}
             onClick={() => {
