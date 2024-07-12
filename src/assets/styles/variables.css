@@ -1,0 +1,29 @@
+:root {
+  --color-primary-90: #003d87;
+  --color-primary-60: #458ff6;
+  --color-primary-30: #a6c8ff;
+  --color-error: #da1e28;
+  --color-warning: #f1c21b;
+  --color-success: #25a249;
+  --color-overlay: rgba(18, 22, 25, 0.5);
+  --color-bg: #ffffff;
+  --color-bg-2: #f2f4f8;
+  --color-border: #dde1e6;
+  --color-border-2: #c1c7cd;
+  --color-border-3: #a2a9b0;
+  --color-border-4: #878d96;
+  --color-light-text: #697077;
+  --color-lignt-text-2: #4d5358;
+  --color-light-text-3: #343a3f;
+  --color-text: #21272a;
+  --color-text-2: #121619;
+
+  --spacing: 8px;
+  --spacing-1: calc(var(--spacing) * 2);
+  --spacing-2: calc(var(--spacing) * 3);
+  --spacing-3: calc(var(--spacing) * 4);
+  --spacing-4: calc(var(--spacing) * 6);
+  --spacing-5: calc(var(--spacing) * 8);
+  --spacing-6: calc(var(--spacing) * 10);
+  --spacing-7: calc(var(--spacing) * 12);
+}
