@@ -1,19 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import SignIn from './pages/SignIn/SignIn';
-import SignUp from './pages/SignUp/SignUp';
-
-const routes = [
-  { path: '/', element: Home },
-  { path: '/signIn', element: SignIn },
-  { path: '/signUp', element: SignUp },
-];
+import { ROUTES } from './const/routes';
 
 function App() {
   return (
     <Routes>
-      {routes.map((props) => (
-        <Route {...props} />
+      {ROUTES.map(({ Element, path, props }, i) => (
+        <Route key={i} path={path} element={<Element {...props}/>} />
       ))}
     </Routes>
   );
