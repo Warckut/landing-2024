@@ -1,0 +1,44 @@
+.reviews {
+  background: linear-gradient(#67c3f3, #5a98f2);
+}
+
+.wrapper {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  margin: var(--spacing-6);
+}
+
+@media (max-width: 1439px) {
+  .container {
+    margin: var(--spacing-5);
+  }
+}
+
+@media (max-width: 1228px) {
+  .container {
+    margin: var(--spacing-4);
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing-3);
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing-2);
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing-1);
+  }
+}

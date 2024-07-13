@@ -1,0 +1,234 @@
+.wrapper {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  margin: var(--spacing-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.knowledgeCaption {
+  margin: 0;
+  color: var(--color-primary-90);
+}
+
+.knowledgeTitle {
+  margin: 0;
+  color: var(--color-cool-gray-90);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-1);
+}
+
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 18px var(--spacing-3);
+  max-height: 56px;
+}
+
+.linkVariantContained {
+  color: var(--color-white);
+  background-color: #458ff6;
+}
+
+.linkVariantOutlined {
+  color: #458ff6;
+  border: 2px solid #458ff6;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  max-width: 664px;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.statsCard {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  box-sizing: border-box;
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid var(--color-cool-gray-20);
+  border-radius: 8px;
+  padding: var(--spacing-1);
+}
+
+.cardIcon {
+  display: flex;
+  padding: 12px;
+  background-color: var(--color-cool-gray-20);
+}
+
+.cardIcon svg {
+  fill: var(--color-cool-gray-60);
+  width: 24px;
+  height: 24px;
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--color-cool-gray-90);
+}
+
+.cardCaption {
+  margin: 0;
+  color: var(--color-cool-gray-60);
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+@media (hover: hover) {
+  .link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .link:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1439px) {
+  .container {
+    margin: var(--spacing-5);
+  }
+}
+
+@media (max-width: 1380px) {
+  .stats {
+    max-width: 933px;
+    margin: 0 auto;
+    gap: var(--spacing-6);
+  }
+
+  .content {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 1228px) {
+  .container {
+    margin: var(--spacing-4);
+  }
+  .knowledgeTitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .stats {
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .content {
+    max-width: 664px;
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing-3);
+    gap: var(--spacing-3);
+  }
+
+  .knowledgeTitle {
+    font-size: 24px;
+  }
+
+  .link {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 13px 28px;
+    max-height: 40px;
+  }
+
+  .content {
+    max-width: 362px;
+  }
+
+  .statsCard {
+    max-width: 169px;
+    flex-direction: column;
+    padding: var(--spacing-1) var(--spacing);
+  }
+
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cardCaption {
+    font-size: 14px;
+  }
+
+  .cardIcon {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .cardIcon svg {
+    fill: var(--color-cool-gray-30);
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing-1);
+    gap: var(--spacing-3);
+  }
+
+  .content {
+    gap: var(--spacing-1);
+    max-width: 354px;
+  }
+
+  .stats {
+    gap: var(--spacing-2);
+  }
+}
+
+@media (max-width: 389px) {
+  .container {
+    margin: var(--spacing-4) var(--spacing);
+  }
+
+  .content {
+    gap: 6px;
+    max-width: 346px;
+  }
+}
