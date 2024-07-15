@@ -1,13 +1,12 @@
 .header {
   width: 100%;
   z-index: 5;
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
 }
 
 .scrollHeader {
   width: 100vw;
-  background-color:  var(--color-white);
-  border-bottom: 1px solid var(--color-cool-gray-10);
+  background-color:  var(--color-bg);
   position: fixed;
   top: -100%;
   z-index: 5;

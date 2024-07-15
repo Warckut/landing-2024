@@ -26,7 +26,7 @@
   width: 256px;
   height: 100vh;
   overflow-y: auto;
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,9 +74,9 @@
   padding-left: var(--spacing-48);
   padding-right: var(--spacing-8);
   border: none;
-  border-bottom: 1px solid var(--color-cool-gray-30);
-  color: var(--color-cool-gray-60);
-  background-color: var(--color-cool-gray-10);
+  border-bottom: 1px solid var(--color-border-2);
+  color: var(--color-light-text);
+  background-color: var(--color-bg-2);
   font-family: 'Roboto';
 }
 
@@ -93,9 +93,9 @@
 
 .navItem {
   padding: var(--spacing-8) var(--spacing-8);
-  border-bottom: 1px solid var(--color-cool-gray-10);
+  border-bottom: 1px solid var(--color-bg-2);
 }
 
 .navItem:first-child {
-  background-color: var(--color-cool-gray-10);
+  background-color: var(--color-bg-2);
 }

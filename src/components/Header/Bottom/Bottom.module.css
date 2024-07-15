@@ -1,6 +1,6 @@
 .bottom {
   padding: var(--spacing-8) 0;
-  background-color: var(--color-cool-gray-10);
+  background-color: var(--color-bg-2);
 }
 
 .bottom>div {

@@ -15,9 +15,9 @@
   min-width: 150px;
   width: 100%;
   padding-left: var(--spacing-48);
-  border: 1px solid var(--color-cool-gray-30);
-  color: var(--color-cool-gray-60);
-  background-color: var(--color-cool-gray-10);
+  border: 1px solid var(--color-border-2);
+  color: var(--color-light-text);
+  background-color: var(--color-bg-2);
   font-family: 'Roboto';
 }
 

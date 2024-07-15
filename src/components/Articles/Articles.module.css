@@ -1,6 +1,6 @@
 .articles {
   padding: var(--spacing-80) 0;
-  border-top: 1px solid var(--color-cool-gray-20);
+  border-top: 1px solid var(--color-border);
 }
 
 .articles>div {
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  border: 1px solid var(--color-cool-gray-20);
+  border: 1px solid var(--color-border);
 }
 
 .itemImg {

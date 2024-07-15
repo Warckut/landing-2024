@@ -34,8 +34,8 @@
   right: 0;
   gap: var(--spacing-8);
   z-index: 1;
-  border: 1px solid var(--color-cool-gray-20);
-  background-color: white;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
   visibility: hidden;
 }
 
@@ -67,7 +67,7 @@
   font-size: 12px;
   background-color: var(--color-error);
   border-radius: 50%;
-  color: var(--color-white);
+  color: var(--color-bg);
 }
 
 @media screen and (max-width: 1024px) {

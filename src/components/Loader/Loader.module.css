@@ -21,7 +21,7 @@
 .loader span {
   position: relative;
   color: var(--color-primary-60);
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
   padding: 0 20px;
 }
 

@@ -1,6 +1,6 @@
 .main {
   padding: var(--spacing-80) 0;
-  background-color: var(--color-cool-gray-10);
+  background-color: var(--color-bg-2);
 }
 
 .main>div {
