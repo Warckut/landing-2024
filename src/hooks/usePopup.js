@@ -35,7 +35,7 @@ function usePopup() {
     };
   }, [ref, show, setShow, handleDocumentClick, handleGlobalKeydown]);
 
-  return [ref, show, setShow];
+  return { ref, show, setShow };
 }
 
 export default usePopup;

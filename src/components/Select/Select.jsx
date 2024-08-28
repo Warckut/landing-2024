@@ -4,7 +4,7 @@ import { ReactComponent as RowImage } from '../../assets/svg/chevron-down-gray.s
 import usePopup from '../../hooks/usePopup';
 
 function Select({ selected, values, onSelected }) {
-  const [ref, show, setShow] = usePopup();
+  const { ref, show, setShow } = usePopup();
 
   return (
     <div ref={ref} className={styles.select}>
@@ -27,18 +27,18 @@ function Select({ selected, values, onSelected }) {
           hidden: !show,
         })}
       >
-        {values.map((v) => (
+        {values.map((item) => (
           <li
-            key={v}
+            key={item}
             className={classNames(styles.contentItem, {
-              [styles.active]: v === selected,
+              [styles.active]: item === selected,
             })}
             onClick={() => {
-              onSelected(v);
+              onSelected(item);
               setShow(false);
             }}
           >
-            {v}
+            {item}
           </li>
         ))}
       </ul>

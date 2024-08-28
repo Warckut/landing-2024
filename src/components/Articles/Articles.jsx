@@ -35,7 +35,9 @@ function Articles() {
             <div className={styles.itemContent}>
               <h5 className={styles.contentHeading}>Мигрень</h5>
               <p className={styles.contentParagraph}>
-                Информация для пациентов. Мигрень. Симптомы, диагностика, лечение, профилактика sdfsdfsdfsdfsdfsfsdf
+                Информация для пациентов. Мигрень. Симптомы, диагностика, лечение, профилактика Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Culpa veritatis eius atque facere asperiores quibusdam tempora
+                suscipit animi optio, accusamus, labore tenetur voluptatum in magnam ab reiciendis, quo ullam nulla.
               </p>
             </div>
             <a href='/' className={classNames('btn', styles.itemDetail)}>
@@ -48,7 +50,9 @@ function Articles() {
             <div className={styles.itemContent}>
               <h5 className={styles.contentHeading}>Доказательная медицина</h5>
               <p className={styles.contentParagraph}>
-                Читая статьи, и получая консультации на нашем сайте, вы часто будете встречаться dsfsdfdsfsdfsdfsd
+                Читая статьи, и получая консультации на нашем сайте, вы часто будете встречаться Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Culpa veritatis eius atque facere asperiores quibusdam tempora
+                suscipit animi optio, accusamus, labore tenetur voluptatum in magnam ab reiciendis, quo ullam nulla
               </p>
             </div>
             <a href='/' className={classNames('btn', styles.itemDetail)}>
@@ -61,7 +65,9 @@ function Articles() {
             <div className={styles.itemContent}>
               <h5 className={styles.contentHeading}>Антидепрессанты</h5>
               <p className={styles.contentParagraph}>
-                Как показало исследование, антидепрессанты, особенно относящиеся к классе селектив sdfsdfsdfsdfsdfsdfsd
+                Как показало исследование, антидепрессанты, особенно относящиеся к классе селектив Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Culpa veritatis eius atque facere asperiores quibusdam tempora
+                suscipit animi optio, accusamus, labore tenetur voluptatum in magnam ab reiciendis, quo ullam nulla
               </p>
             </div>
             <a href='/' className={classNames('btn', styles.itemDetail)}>

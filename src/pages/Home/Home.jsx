@@ -33,14 +33,14 @@ function Home() {
         scroll={true}
         categories={categories}
         category={category}
-        onSelected={(v) => setCategory(v)}
+        onSelected={(category) => setCategory(category)}
       />
       <Header
         show={true}
         scroll={false}
         categories={categories}
         category={category}
-        onSelected={(v) => setCategory(v)}
+        onSelected={(category) => setCategory(category)}
       />
       <Main />
       <AboutProject />

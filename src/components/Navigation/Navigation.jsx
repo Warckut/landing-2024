@@ -2,10 +2,11 @@ import styles from './Navigation.module.css';
 import usePopup from '../../hooks/usePopup';
 import { ReactComponent as MenuImage } from '../../assets/svg/menu.svg';
 import Sidebar from '../Sidebar/Sidebar';
+import SECTIONS from '../../const/sections';
 
 function Navigation() {
-  const [refSB, showSB, setShowSB] = usePopup();
-
+  const { ref: refSidebar, show: showSidebar, setShow: setShowSidebar } = usePopup();
+  console.log(showSidebar)
   return (
     <>
       <ul className={styles.nav}>
@@ -13,41 +14,19 @@ function Navigation() {
           className={styles.navMenu}
           onClick={(e) => {
             e.stopPropagation();
-            setShowSB((v) => !v);
+            setShowSidebar((show) => !show);
           }}
         >
-          <MenuImage className={styles.menuImg}/>
+          <MenuImage className={styles.menuImg} />
           <span>Меню</span>
         </li>
-        <li className={styles.navItem}>
-          <a href='#main'>Главная</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='#about'>О проекте</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='#articles'>Статьи</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Отзывы</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Знания</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Вопросы</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Цены</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Оставить заявку</a>
-        </li>
-        <li className={styles.navItem}>
-          <a href='/'>Спонсоры</a>
-        </li>
+        {SECTIONS.map(({ href, name }) => (
+          <li key={href} className={styles.navItem}>
+            <a href={href}>{name}</a>
+          </li>
+        ))}
       </ul>
-      <Sidebar refp={refSB} showSB={showSB} onClose={() => setShowSB(false)} />
+      <Sidebar refp={refSidebar} showSidebar={showSidebar} onClose={() => setShowSidebar(false)} />
     </>
   );
 }

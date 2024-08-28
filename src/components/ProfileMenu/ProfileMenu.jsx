@@ -6,7 +6,7 @@ import rowImage from '../../assets/svg/chevron-down.svg';
 import usePopup from '../../hooks/usePopup';
 
 function ProfileMenu() {
-  const [ref, show, setShow] = usePopup();
+  const { ref, show, setShow} = usePopup();
 
   return (
     <>

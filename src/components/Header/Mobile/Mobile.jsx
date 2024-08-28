@@ -7,7 +7,7 @@ import Sidebar from '../../Sidebar/Sidebar';
 import ProfileMenu from '../../ProfileMenu/ProfileMenu';
 
 function Mobile() {
-  const [refSB, showSB, setShowSB] = usePopup();
+  const { ref: refSidebar, show: showSidebar, setShow: setShowSidebar } = usePopup();
 
   return (
     <div className={styles.mobile}>
@@ -20,16 +20,16 @@ function Mobile() {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              setShowSB((state) => !state);
+              setShowSidebar((state) => !state);
             }}
             className={classNames('btn-reset', styles.mobileMenu)}
           >
-            <MenuImage className={styles.menuImg}/>
+            <MenuImage className={styles.menuImg} />
             <span>Меню</span>
           </button>
         </div>
       </div>
-      <Sidebar refp={refSB} showSB={showSB} onClose={() => setShowSB(false)} />
+      <Sidebar refp={refSidebar} showSidebar={showSidebar} onClose={() => setShowSidebar(false)} />
     </div>
   );
 }

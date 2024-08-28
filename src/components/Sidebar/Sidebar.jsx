@@ -2,18 +2,19 @@ import classNames from 'classnames';
 import styles from './Sidebar.module.css';
 import { ReactComponent as LogoImage } from '../../assets/svg/logo.svg';
 import { ReactComponent as SearchImage } from '../../assets/svg/search.svg';
+import SECTIONS from '../../const/sections';
 
-function Sidebar({ showSB, onClose, refp }) {
+function Sidebar({ showSidebar, onClose, refp }) {
   return (
     <div
       className={classNames(styles.overlay, {
-        [styles.overlay_show]: showSB,
+        [styles.overlay_show]: showSidebar,
       })}
     >
       <aside
         ref={refp}
         className={classNames(styles.sidebar, {
-          [styles.sidebar_show]: showSB,
+          [styles.sidebar_show]: showSidebar,
         })}
       >
         <div className={styles.sidebarContent}>
@@ -25,33 +26,11 @@ function Sidebar({ showSB, onClose, refp }) {
             <input type='text' className={styles.searchInput} placeholder='Поиск по ...' />
           </div>
           <ul className={styles.nav} onClick={onClose}>
-            <li className={styles.navItem}>
-              <a href='#main'>Главная</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='#about'>О проекте</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='#articles'>Статьи</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Отзывы</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Знания</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Вопросы</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Цены</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Оставить заявку</a>
-            </li>
-            <li className={styles.navItem}>
-              <a href='/'>Спонсоры</a>
-            </li>
+            {SECTIONS.map(({ name, href }) => (
+              <li key={href} className={styles.navItem}>
+                <a href={href}>{name}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <button className={classNames(styles.sidebarClosebtn, 'btn-outline')} onClick={onClose}>

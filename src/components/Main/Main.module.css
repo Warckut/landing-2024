@@ -9,37 +9,37 @@
   align-items: center;
 }
 
-.main__item {
+.mainItem {
   width: 50%;
 }
 
-.main__item img {
+.mainItem img {
   width: 100%;
   max-width: 600px;
 }
 
-.main__item+.main__item {
+.mainItem+.mainItem {
   margin-top: 0;
   margin-left: var(--spacing-80);
 }
 
 
-.main__item h1 {
+.mainItem h1 {
   font-size: var(--h1-font-size);
   margin-bottom: var(--spacing-48);
 }
 
-.main__item p {
+.mainItem p {
   font-size: var(--body-l-font-size);
   margin-bottom: var(--spacing-64);
 }
 
-.main__btns button {
+.mainBtns button {
   font-size: var(--btn-l-font-size);
   padding: var(--spacing-16) var(--spacing-32);
 }
 
-.main__btns button+button {
+.mainBtns button+button {
   margin-left: var(--spacing-16);
 }
 
@@ -53,26 +53,26 @@
     flex-direction: column;
   }
 
-  .main__item {
+  .mainItem {
     width: 100%;
   }
 
-  .main__item+.main__item {
+  .mainItem+.mainItem {
     margin-top: var(--spacing-48);
     margin-left: 0;
   }
 
-  .main__item p {
+  .mainItem p {
     font-size: var(--body-m-font-size);
     margin-bottom: var(--spacing-48);
   }
 
-  .main__item h1 {
+  .mainItem h1 {
     font-size: var(--h4-font-size);
     margin-bottom: var(--spacing-24);
   }
 
-  .main__item button {
+  .mainItem button {
     font-size: var(--btn-m-font-size);
     padding: var(--spacing-16) var(--spacing-24);
   }
