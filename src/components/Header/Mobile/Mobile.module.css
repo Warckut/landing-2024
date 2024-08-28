@@ -39,7 +39,7 @@
   color: var(--color-primary-90);
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .mobile {
     display: block;
     padding: var(--spacing-16) 0;

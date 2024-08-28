@@ -6,9 +6,9 @@ import SECTIONS from '../../const/sections';
 
 function Navigation() {
   const { ref: refSidebar, show: showSidebar, setShow: setShowSidebar } = usePopup();
-  console.log(showSidebar)
+
   return (
-    <>
+    <nav>
       <ul className={styles.nav}>
         <li
           className={styles.navMenu}
@@ -27,7 +27,7 @@ function Navigation() {
         ))}
       </ul>
       <Sidebar refp={refSidebar} showSidebar={showSidebar} onClose={() => setShowSidebar(false)} />
-    </>
+    </nav>
   );
 }
 

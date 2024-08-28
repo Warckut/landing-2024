@@ -62,7 +62,7 @@
   height: 48px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .about {
     padding: var(--spacing-48) 0;
   }

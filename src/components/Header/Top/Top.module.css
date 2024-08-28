@@ -27,7 +27,7 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .top {
     display: none;
   }
