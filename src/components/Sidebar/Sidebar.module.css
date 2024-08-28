@@ -1,0 +1,101 @@
+.overlay {
+  background-color: var(--color-overlay);
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+  right: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.overlay_show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 256px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-16);
+  -webkit-transition: right 0.3s ease-in-out;
+  -moz-transition: right 0.3s ease-in-out;
+  -o-transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
+}
+
+.sidebar_show {
+  right: 0;
+}
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebarLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-16);
+}
+
+.sidebarSearch {
+  position: relative;
+  width: 100%;
+  margin-bottom: var(--spacing-16);
+}
+
+.searchImg {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 9px);
+  left: 18.5px;
+}
+
+.searchInput {
+  font-size: 16px;
+  min-width: 150px;
+  width: 100%;
+  padding: var(--spacing-8) 0;
+  padding-left: var(--spacing-48);
+  padding-right: var(--spacing-8);
+  border: none;
+  border-bottom: 1px solid var(--color-border-2);
+  color: var(--color-light-text);
+  background-color: var(--color-bg-2);
+  font-family: 'Roboto';
+}
+
+.sidebarClosebtn {
+  width: 100%;
+  padding: var(--spacing-8) 0;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  padding: var(--spacing-8) var(--spacing-8);
+  border-bottom: 1px solid var(--color-bg-2);
+}
+
+.navItem:first-child {
+  background-color: var(--color-bg-2);
+}

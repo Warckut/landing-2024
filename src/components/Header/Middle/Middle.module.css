@@ -1,0 +1,23 @@
+.middle {
+  padding: var(--spacing-16) 0;
+}
+
+.scrollMiddle {
+  padding: var(--spacing-8) 0;
+}
+
+.middle>div {
+  display: flex;
+}
+
+.middleLogo {
+  margin-right: var(--spacing-24);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .middle {
+    display: none;
+  }
+}

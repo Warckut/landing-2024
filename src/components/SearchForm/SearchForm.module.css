@@ -1,0 +1,36 @@
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  font-size: var(--body-m-font-size);
+}
+
+.searchImg {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: var(--spacing-16);
+}
+
+.searchInput {
+  min-width: 150px;
+  width: 100%;
+  padding-left: var(--spacing-48);
+  border: 1px solid var(--color-border-2);
+  color: var(--color-light-text);
+  background-color: var(--color-bg-2);
+  font-family: 'Roboto';
+}
+
+.searchBtn {
+  margin-left: var(--spacing-24);
+  font-size: var(--btn-m-font-size);
+  cursor: pointer;
+}
+
+.searchInput:focus-visible {
+  outline: none;
+}
+
+.searchInput::placeholder {
+  opacity: 1;
+}

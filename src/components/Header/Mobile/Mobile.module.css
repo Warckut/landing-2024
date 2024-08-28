@@ -1,0 +1,47 @@
+.mobile {
+  display: none;
+}
+
+.mobile>div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileLogo {
+  margin-right: var(--spacing-24);
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 24px;
+}
+
+.mobileBtngroup {
+  display: flex;
+  align-items: center;
+  height: var(--spacing-48);
+}
+
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: 0 var(--spacing-8);
+}
+
+.menuImg * {
+  fill: var(--color-primary-90);
+}
+
+.mobileMenu {
+  color: var(--color-primary-90);
+}
+
+@media (max-width: 1024px) {
+  .mobile {
+    display: block;
+    padding: var(--spacing-16) 0;
+  }
+}

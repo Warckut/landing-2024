@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  z-index: 5;
+  background-color: var(--color-bg);
+}
+
+.scrollHeader {
+  width: 100vw;
+  background-color:  var(--color-bg);
+  position: fixed;
+  top: -100%;
+  z-index: 5;
+  left: 0;
+  -webkit-transition: top 0.2s ease-out;
+  -moz-transition: top 0.2s ease-out;
+  -o-transition: top 0.2s ease-out;
+  transition: top 0.2s ease-out;
+  -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 6px rgba(0,0,0, 0.2);
+}
+
+.show {
+  top: 0;
+}

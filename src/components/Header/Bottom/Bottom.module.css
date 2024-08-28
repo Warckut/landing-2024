@@ -1,0 +1,15 @@
+.bottom {
+  padding: var(--spacing-8) 0;
+  background-color: var(--color-bg-2);
+}
+
+.bottom>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .bottom {
+    display: none;
+  }
+}
